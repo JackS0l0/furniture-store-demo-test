@@ -1,0 +1,36 @@
+{% load static %}
+{% load i18n %}
+<footer>
+    <div class="bg">
+        <img src="{% static 'media/fbg2.png' %}">
+    </div>
+    <div class="footerBlock">
+        <div class="logoBox">
+            <span>
+                <p class="logo"><img src="{% static 'media/logo2.png' %}"></p>
+            </span>
+            <span>
+                <p>© 2018-{% now "Y" %}</p>
+                <p>Все права защищены</p>
+            </span>
+        </div>
+        <div class="contact">
+            <p>+7 (888) 888-88-88</p>
+            <p>e-mail: order@test.ru</p>
+        </div>
+        <div class="socialIcons">
+            <a href="{% url 'index' %}" class="socialIcon"><img src="{% static 'media/f2.png' %}"></a>
+            <a href="{% url 'index' %}" class="socialIcon"><img src="{% static 'media/i2.png' %}"></a>
+            <a href="{% url 'index' %}" class="socialIcon"><img src="{% static 'media/t2.png' %}"></a>
+            <a href="{% url 'index' %}" class="socialIcon"><img src="{% static 'media/w2.png' %}"></a>
+        </div>
+        <div class="box">
+            <p>Контакты</p>
+            <p>Статьи</p>
+        </div>
+        <div class="box">
+            <p>Кто мы?</p>
+            <p>Как мы работаем?</p>
+        </div>
+    </div>
+</footer>

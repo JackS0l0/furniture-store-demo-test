@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block main %}
+    <main>
+        <div class="categories">
+            <a href="{% url 'index' %}"><img src="{% static 'media/1.png' %}">Акции</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/2.png' %}">Новинки</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/hand.png' %}">Свое производство</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/3.png' %}">Столы</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/4.png' %}">Стулья</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/5.png' %}">Мягкая мебель</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/6.png' %}">Стойки</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/7.png' %}">Для детей</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/8.png' %}">Гримерные/гардероб</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/9.png' %}">Ограждения</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/10.png' %}">Для улицы</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/11.png' %}">Декор</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/12.png' %}">Готовые комплекты</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/13.png' %}">Техника</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/16.png' %}">Хранение</a>
+            <a href="{% url 'index' %}"><img src="{% static 'media/15.png' %}">Текстиль</a>
+        </div>
+        <div class="mainBlock">
+            <div class="adv">
+                <img src="{% static 'media/wall.jpg' %}" alt="">
+            </div>
+            <div class="quest" style="margin: 3vw 0;">
+                <p style="font-weight: bold; font-size: 1.6vw;">С чем связан выбор?</p>
+                <p style="font-style: italic;">Невозможно — это лишь слово, за которое прячутся маленькие люди.</p>
+                <p style="font-style: italic; font-weight: bold;">М. Али</p>
+            </div>
+            <div class="gridSupport">
+                <div class="block" style="text-align: center;">
+                    <p style="font-weight: bold;">Мы создаем мебель по Вашим эскизам и сдаем ее Вам в аренду</p>
+                    <p>Собственное производство позволяет содержать наши товары в отличном состоянии. </p>
+                    <p>Если вы недовольны качеством привезенного оборудования, то мы оперативно исправим недочет или вернем Вам деньги.</p>
+                </div>
+                <div class="block" style="text-align: center; padding: 1vw;">
+                    <p style="font-weight: bold;">Условия оплаты, отвечающие потребностям рынка</p>
+                    <p>Мы как владельцы — выходцы из сферы Event и понимаем условия работы крупных компаний и гос.заказчиков. Поэтому своим постоянным Клиентам мы позволяем частичную постоплату. И придерживаемся прозрачной системы начисления налогов. </p>
+                </div>
+                <div class="block" style="text-align: center; padding: 1vw;">
+                    <p style="font-weight: bold;">Собственная школа кадрови обучение сотрудников по стандартам</p>
+                    <p>Мы предоставляем индивидуальный менеджмент: профессиональный подход на каждом этапе работы с нами. Мы готовим не только менеджеров, мы растим каждого сотрудника нашей компании, чтобы он знал и разбирался во всех вопросах </p>
+                </div>
+            </div>
+            <div class="contactWithUsBtn">
+                <a href="{% url 'index' %}"><img src="{% static 'media/hand.png' %}">Посмотреть мебель, которую мы уже произвели под заказ</a>
+                <a href="{% url 'index' %}" class="btn">Написать нам</a>
+                <a href="{% url 'index' %}"><img src="{% static 'media/hand.png' %}">Кто тренернашей команды?</a>
+            </div>
+            <div class="quest" style="margin: 3vw 0;">
+                <p style="font-weight: bold; font-size: 1.4vw;">Отзывы наших клиентов</p>
+            </div>
+            <div class="partnersInMain">
+                <div class="block">
+                    <p style="font-weight: bold; font-size: 1.5vw;">Hubble Bubble Lounge</p>
+                    <p>Константин Константинопольский, директор</p>
+                    <p>Спасибо большое, мы пользуемся вашим сервисом уже 3-й раз. Все прошло как всегда на высоте! Подробнее</p>
+                    <span>
+                        <p><img src="{% static 'media/file.png' %}"> Источник</p>
+                        <p>23.02.2020</p>
+                    </span>
+                </div>
+                <div class="block">
+                    <p style="font-weight: bold; font-size: 1.5vw;">TezTour Kazan</p>
+                    <p>Арчибальд Кстошинский-Римский, менеджер проектов</p>
+                    <p>Первый раз работали с Рендей и все оказалось на высшем уровне. С удвольствием будем рекомандовать их своих коллегам! Подробнее</p>
+                    <span>
+                        <p><img src="{% static 'media/file.png' %}"> Источник</p>
+                        <p>03.12.2019</p>
+                    </span>
+                </div>
+            </div>
+            <div class="quest" style="margin: 3vw 0;">
+                <p style="font-weight: bold; font-size: 1.4vw;">Аренда мебели</p>
+            </div>
+            <div class="rent">
+                <p>Аренда мебели становится все более популярной услугой для организации мероприятий. Деловые вечеринки, презентации, фуршеты, выставки, шоу-показы – события, которые не обходятся без обустройства площадки с использованием фурнитуры, декора, текстиля и другого реквизита. Важно, чтобы все элементы оформления были в должном виде и соответствовали стилю торжества.Для этого выбирайте надежных и опытных партнеров в сопровождении праздников. Наша фирма предлагает большой выбор решений для организации любого по масштабности культурного или делового мероприятия в Москве и по всей России. У нас отлажен сервис и благоприятные условия для удовлетворения любых запросов клиентов. </p>
+            </div>
+        </div>
+    </main>
+{% endblock %}

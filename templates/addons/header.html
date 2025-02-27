@@ -1,0 +1,57 @@
+{% load static %}
+{% load i18n %}
+<header>
+    <div class="leftBlock">
+        <div class="logoAndSocialIcons">
+            <div class="logoDiv">
+                <a href="{% url 'index' %}" class="logo">
+                    <img src="{% static 'media/logo.png' %}">
+                    <p>very da</p>
+                </a>
+            </div>
+            <div class="socialIconsDiv">
+                <span>
+                    <a href="{% url 'index' %}">Сочи ></a>
+                </span>
+                <span>
+                    <a href="{% url 'index' %}"><img src="{% static 'media/f.png' %}"></a>
+                    <a href="{% url 'index' %}"><img src="{% static 'media/i.png' %}"></a>
+                    <a href="{% url 'index' %}"><img src="{% static 'media/t.png' %}"></a>
+                    <a href="{% url 'index' %}"><img src="{% static 'media/w.png' %}"></a>
+                </span>
+            </div>
+        </div>
+        <div class="searchInput">
+            <div class="searchClass">
+                <button><img src="{% static 'media/search.png' %}"></button>
+                <input type="search" name="" id="">
+            </div>
+        </div>
+    </div>
+    <div class="rightBlock">
+        <div class="righTop">
+            <a href="{% url 'index' %}">{% trans 'Главная' %}</a>
+            <a href="{% url 'index' %}">{% trans 'Кто мы?' %}</a>
+            <a href="{% url 'index' %}">{% trans 'Как мы работаем' %}</a>
+            <a href="{% url 'index' %}">{% trans 'Контакты' %}</a>
+            <div class="dropdown">
+                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">RU</button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="{% url 'set-language' 'ru' %}">Русский</a></li>
+                  <li><a class="dropdown-item" href="{% url 'set-language' 'en' %}">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="righBottom">
+            <span>
+                <a href="{% url 'index' %}"><img src="{% static 'media/mail.png' %}">order@test.ru</a>
+            </span>
+            <span>
+                <a href="{% url 'index' %}">+7 (888) 888-88-88</a>
+                <a href="{% url 'index' %}"><img src="{% static 'media/profile.png' %}"></a>
+                <a href="{% url 'index' %}"><img src="{% static 'media/heart.png' %}"></a>
+                <a href="{% url 'index' %}"><img src="{% static 'media/basket.png' %}"></a>
+            </span>
+        </div>
+    </div>
+</header>
